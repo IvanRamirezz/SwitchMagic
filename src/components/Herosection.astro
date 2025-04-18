@@ -1,0 +1,94 @@
+<!-- Sección de estilos -->
+<style>
+    .product-showcase {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 8%;
+        min-height: 100vh;
+        /* background: rgb(15, 16, 17); */
+        background: rgb(8, 1, 14);
+        position: relative;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .content {
+        max-width: 600px;
+        color: white;
+    }
+
+    .content h1 {
+        font-size: 5.5rem;
+        color: white;
+        margin-bottom: 2rem;
+        line-height: 1.2;
+    }
+    .content p{
+        font-size: 1.5rem;
+    }
+
+    .image-container {
+        max-width: 800px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .product-showcase {
+            flex-direction: column;
+            padding: 100px 20px;
+            min-height: auto;
+            
+        }
+
+        .content {
+            margin-top: 0;
+            padding: 0;
+            text-align: center;
+            
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            text-align: left;
+        }
+
+        .content p{
+            font-size: 1.1rem;
+            text-align: left;
+        }
+
+        .image-container {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        .cta-button {
+            width: 100%;
+            font-size: 0.8rem;
+            padding: 12px 20px;
+        }
+
+        .cta-button:first-child {
+            max-width: 250px;
+        }
+    }
+</style>
+
+<!-- Sección HTML -->
+<section class="product-showcase">
+    <div class="content">
+        <h1>Explora el mundo magico</h1>
+        <p>Todo lo que necesitas saber sobre la magia en Nintendo Switch en un solo lugar.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="/SwitchMagic/images/switch-magia.jpg" alt="Nintendo Switch o imagen mágica">
+    </div>
+</section>
