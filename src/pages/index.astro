@@ -1,7 +1,12 @@
 ---
 import Hero from '../components/Herosection.astro';
 import Header from "../components/Header.astro";
-import "../styles/global.css";
+import TextCenter from "../components/Textcenter.astro"
+import Descarga from "../components/Descarga.astro";
+// import "../styles/global.css";
+import Layout from "../layouts/Layout.astro"
+import First from "../components/FirstPass.astro";
+import Eshop from "../components/Eshop.astro";
 ---
 <html lang="es">
   <head>
@@ -12,6 +17,11 @@ import "../styles/global.css";
   </head>
   <body>
     <Header/>
+    <Layout/>
     <Hero />
+    <TextCenter/>
+    <First/>
+    <Eshop/>
+    <Descarga/>
   </body>
 </html>
