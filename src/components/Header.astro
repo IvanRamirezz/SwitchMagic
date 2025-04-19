@@ -1,9 +1,9 @@
 ---
 import whiteLogo from "../../public/Logo.png";
 const menuItems = [
-  { name: "Home", link: "/" },
-  { name: "Primeros pasos", link: "/Producto/" },
-  { name: 'Eshop Free', link: '/blog/' },
+  { name: "Home", link: "#hero" },
+  { name: "Primeros pasos", link: "#First" },
+  { name: 'Eshop Free', link: '#eshop' },
   // {
   //   name: "Educación continua",
   //   link: "/Insights/",
@@ -14,15 +14,15 @@ const menuItems = [
   //     // { name: "Insights", link: "/Insights/" },
   //   ],
   // },
-   { name: "Enlaces de descarga", link: "/Quienes/" },
+   { name: "Enlaces de descarga", link: "#descarga" },
 ];
 ---
 
 <header class="header">
   <div class="container">
     <nav>
-      <a href="/" class="logo">
-        <img src={whiteLogo.src} alt="Actipulse Neuroscience" />
+      <a href="#hero" class="logo">
+        <img src={whiteLogo.src} alt="Pixeleado" />
       </a>
 
       <!-- Botón hamburguesa para móviles -->
@@ -72,7 +72,7 @@ const menuItems = [
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -156,57 +156,6 @@ const menuItems = [
     border: none;
     color: white;
     cursor: pointer;
-  }
-
-  /* Barra de búsqueda */
-  .search-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-    border-radius: 20px;
-    padding: 5px 12px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .search-box {
-    width: 40px;
-    height: 40px;
-    border-radius: 200px;
-    border: none;
-    cursor: pointer;
-    background: transparent;
-    background-color: black;
-    transition:
-      width 0.6s,
-      border-radius 0.6s,
-      background 0.6s,
-      box-shadow 0.6s;
-  }
-
-  .search-box:focus {
-    width: 250px;
-    padding-left: 15px;
-    background: black;
-    border-radius: 80px;
-    cursor: text;
-    outline: none;
-    color: white;
-  }
-
-  .search-icon {
-    position: absolute;
-    right: 15px;
-    font-size: 18px;
-    color: white;
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
-    bottom: 7px;
-    right: 24px;
-  }
-
-  #search-submit {
-    position: absolute;
-    left: -9999px;
   }
 
   .btn-cta {

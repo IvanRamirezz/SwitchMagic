@@ -37,7 +37,8 @@
     }
 
     .video-embed {
-        max-width: 480px;
+        /* max-width: 480px; */
+        max-width: 280px;
         width: 100%;
         border-radius: 12px;
         overflow: hidden;
@@ -49,15 +50,22 @@
         height: 270px;
         border: none;
     }
+    .video-embed img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
 
     @media (max-width: 768px) {
         .video-block {
             flex-direction: column;
-            text-align: center;
+            text-align:left;
         }
 
         .video-text {
-            text-align: center;
+            text-align: left;
         }
 
         .video-text h3 {
@@ -74,26 +82,32 @@
     }
 </style>
 
-<section class="video-section">
-    <h2>Aprende paso a paso</h2>
+<section class="video-section" id="eshop">
+    <h2>2 formas diferentes podras <strong>JUGAR</strong></h2>
 
     <div class="video-block">
         <div class="video-text">
-            <h3>Parte 1: La explicación</h3>
-            <p>La parte de YouTube, donde explico muchos de los conceptos que hay que conocer para poder hacer la magia.</p>
+            <h3>Metodo 1: TINFOIL</h3>
+            <p>Este metodo consiste en usar alguna eshop disponible en Tinfoil para descargar juegos desde la propia consola, aunque puede llegar a fallar debido a caidas que ha tenido, no es 100% estable pero es muy comoda.</p>
         </div>
-        <div class="video-embed">
+        <!-- <div class="video-embed">
             <iframe src="https://www.youtube.com/embed/Wo7SxWfD1Zs" title="Parte 1 YouTube" allowfullscreen></iframe>
-        </div>
+        </div> -->
+        <div class="video-embed">
+            <img src="/SwitchMagic/images/tinfoil.png" alt="Preview del video Parte 1" />
+          </div>          
     </div>
 
     <div class="video-block">
         <div class="video-text">
-            <h3>Parte 2: El proceso</h3>
-            <p>Si ya has visto la parte 1 en YouTube, ahora te toca este vídeo. Aquí nos manchamos las manos y aplicamos todo lo aprendido, además de descubrir algunos trucos nuevos.</p>
+            <h3>Metodo 2: Desde PC</h3>
+            <p>Este metodo consiste en usar un programa PC para instalar los <strong>JUEGOS</strong> desde tu consola, pero estos deberan descargarse desde una pagina y luego mediante un USB de la consola a la PC instalarlos, el video a continuacion explica todo a detalle.</p>
         </div>
-        <div class="video-embed">
+        <!-- <div class="video-embed">
             <iframe src="https://www.youtube.com/embed/Wo7SxWfD1Zs" title="Parte 2 YouTube" allowfullscreen></iframe>
-        </div>
+        </div> -->
+        <div class="video-embed">
+            <img src="/SwitchMagic/images/nsp.jpg" alt="Preview del video Parte 2" />
+          </div>    
     </div>
 </section>
