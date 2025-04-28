@@ -1,0 +1,351 @@
+---
+import Popup from '../components/Form_News.astro';
+---
+
+<footer class="footer">
+  <div class="footer-overlay">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- 🔹 Columna izquierda: Formulario de suscripción -->
+        <div class="footer-subscribe">
+          <h2 class="footer-title">FORMA PARTE DE <strong>NUESTRA COMUNIDAD</strong></h2>
+          <Popup/>
+          <!-- <form
+            class="footer-form"
+            action="https://script.google.com/macros/s/AKfycbzsAEpQ8LvlJ64OW0BVln-aSWrI3tqWv9lflgL6q95ONxRzcsG-6Pec97LXFN0wCg_xAw/exec"
+            method="POST"
+          > -->
+            <!-- <input type="email" name="email" placeholder="Tu Email" required /> -->
+            <!-- <button type="submit">FORMULARIO</button> -->
+          <!-- </form> -->
+        </div>
+
+        <!-- 🔹 Columna derecha: Menú en dos columnas -->
+        <div class="footer-links-grid">
+          <div class="footer-column">
+            <div>
+              <h4>HOME</h4>
+              <a href="/Producto">Explora la magía</a>
+              <!-- <a href="#">Accesorios</a> -->
+            </div>
+            <div>
+              <h4>INVESTIGACIÓN</h4>
+              <a href="/blog">Blog</a>
+              <!-- <a href="/Producto/#evidencia">Papers</a>
+              <a href="#">Publirreportajes de eventos</a> -->
+            </div>
+          </div>
+          <div class="footer-column">
+            <div>
+              <h4>PERSONALIZACION</h4>
+              <a href="/Insights"> Instalacion Temas</a>
+              <!-- <a href="/Cursos">Cursos presenciales</a> -->
+              <a href="/Diplomados">Instalacion Juegos</a>
+            </div>
+            <div>
+              <h4>EXTRAS</h4>
+              <a href="/Quienes">Emulación</a>
+              <!-- <a href="#">Team</a>
+              <a href="#">Impacto</a>
+              <a href="#">Propósito</a> -->
+            </div>
+            <!-- 🔹 Redes sociales -->
+            <div class="footer-socials">
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M7 10v4h3v7h4v-7h3l1-4h-4v-2a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2h-3"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M16.5 7.5h.01"></path>
+                </svg>
+              </a>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M2 8a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4Z"
+                  ></path>
+                  <path d="M10 9l5 3-5 3V9Z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🔹 Icono de flecha para volver arriba -->
+      <!-- <div class="scroll-to-top">
+        <a href="#top">↑</a>
+      </div> -->
+    </div>
+    <!-- 🔹 Redes sociales -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Pixeleado. Todos los derechos reservados.</p>
+      <div class="footer-legal-links">
+        <a href="/SwitchMagic/Aviso_legal">Política de Privacidad</a>
+        <span>|</span>
+        <!-- <a href="/terminos-condiciones">Términos y Condiciones</a> -->
+      </div>
+    </div>
+    
+  </div>
+</footer>
+
+
+<style>
+  .footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .footer-socials a img {
+    width: 22px;
+    height: 12px;
+    transition:
+      transform 0.3s ease,
+      filter 0.3s ease;
+    filter: brightness(0) invert(1); /* Blanco sobre fondo oscuro */
+  }
+
+  .footer-socials a:hover img {
+    transform: scale(1.2);
+    filter: brightness(0) saturate(100%) invert(52%) sepia(97%) saturate(748%)
+      hue-rotate(162deg) brightness(105%) contrast(101%);
+  }
+
+  .footer {
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 10, 20, 0.7);
+    backdrop-filter: blur(25px);
+    z-index: 10;
+  }
+
+  .footer-overlay {
+    background: rgba(0, 10, 20, 0.7);
+    padding: 3rem 1rem;
+    color: white;
+    box-shadow: inset 0 0 60px rgba(0, 191, 255, 0.05);
+  }
+
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .footer-subscribe {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    color: #00bfff;
+  }
+
+  .footer-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-form input {
+    padding: 0.9rem 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    flex-grow: 1;
+    min-width: 250px;
+    transition: all 0.3s ease;
+  }
+
+  .footer-form input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .footer-form input:focus {
+    outline: none;
+    border-color: #00bfff;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .footer-form button {
+    padding: 0.9rem 2rem;
+    background-color: rgba(0, 191, 255, 0.2);
+    border: 2px solid #00bfff;
+    color: #00bfff;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+
+  .footer-form button:hover {
+    background-color: #00bfff;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
+  }
+
+  .footer-links-grid {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .footer-column {
+    min-width: 200px;
+  }
+
+  .footer-column h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #00bfff;
+    font-weight: 500;
+  }
+
+  .footer-column a {
+    display: block;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+  }
+
+  .footer-column a:hover {
+    color: #00bfff;
+  }
+
+  .scroll-to-top {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .scroll-to-top a {
+    color: white;
+    text-decoration: none;
+    transition:
+      transform 0.3s ease,
+      color 0.3s ease;
+  }
+
+  .scroll-to-top a:hover {
+    transform: scale(1.2);
+    color: #00bfff;
+  }
+  .footer-bottom {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-legal-links {
+  margin-top: 0.5rem;
+}
+
+.footer-legal-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-legal-links a:hover {
+  color: #00bfff;
+}
+
+.footer-legal-links span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+  @media (max-width: 768px) {
+    .footer-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-links-grid {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-form {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
